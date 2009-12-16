@@ -1,0 +1,8 @@
+The `ps` command could take a custom format of output:
+
+    ps -o rss,vsz -p1234
+
+This command sends an output like this:
+
+     RSS    VSZ
+    3916   6604

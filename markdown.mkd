@@ -1,0 +1,12 @@
+How to test markdown's effect?
+------------------------------
+I found an interesting place to test markdown's effect:
+
+    www.stackoverflow.com
+
+About displaying code block:
+----------------------------
+The sperated code line should start with at least 4 speces or 1 tab,
+and must at least 1 line away from the last line, just like this:
+
+    this is my code

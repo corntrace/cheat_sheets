@@ -1,0 +1,6 @@
+How to determine the filetype according to the file extension?
+--------------------------------------------------------------
+We could create a file called xxx.vim(xxx is the filetype name) in the ~/.vim/ftdetect dir:
+with the following content:
+
+    autocmd BufNewFile,BufReadPost *.mkd,*.markdown set filetype=mkd
