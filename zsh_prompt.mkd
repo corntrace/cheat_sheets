@@ -1,0 +1,3 @@
+A zsh prompt for Git users
+--------------------------
+Check out [here](http://sebastiancelis.com/2009/nov/16/zsh-prompt-git-users/).You would get a lot of hints and useful codes of course!
