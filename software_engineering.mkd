@@ -1,0 +1,14 @@
+How can you tell the different between "Don't over design" and "Abstract the raw requirement"?
+--------------------------------
+When you meet a raw description of a 'requirement': "The cover of engine should not higher than
+200 degree." What would you think about translating it into code? You should do some abstraction
+of course with the result of "The cover of engine should not higher than 'a certain value'" in
+which the "certain value" should be determined in detailed environment.
+
+But wait, there's another rule: "Don't over design". The abstraction of temperature makes it applied
+to various values, is that an over design?
+
+The confusion comes from the ambiguous definition of "Design". In my opinion, a "Design"( or a good design)
+Should be abstraction oriented. Under this explanation, the only "design" should be the abstracted one.
+If you make another design "The engine should be cooled by some materials" which dose not mentioned by 
+our customer, that's "over design". Otherwise, there's nothing is "over designed".

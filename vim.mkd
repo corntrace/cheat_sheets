@@ -1,0 +1,15 @@
+The Search/Replace magic marks :)
+---------------------------------
+If you want to append something search out, you could use the following code:
+
+    s/someword/&\r/
+
+In this code, the `&` means the matching result of previous regular expression.
+
+In another situation, you would notice there's a litter different with normal
+regular expression:
+
+    s/.\{78\}/&\r/
+
+It should be `/.{78}/` in normal regular expression. But in **VIM** it should be
+wrote as `/.\{78\}/`
