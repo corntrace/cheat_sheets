@@ -1,0 +1,21 @@
+What is passive group?
+----------------------
+At first, a 'group' means a string of letters:
+
+    /\d (.+) and \d (.+)/
+
+This would match the following sentence:
+> I have one apple and tow bananas
+
+And get tow matching results:
+
+    $1 = "apple"
+		$2 = "bananas"
+
+But if I don't want the first result, I could using the **Passive Group**
+
+    /\d (?:.+) and \d (.+)/
+
+Then I could get the matching result:
+
+    $1 = "bananas"
