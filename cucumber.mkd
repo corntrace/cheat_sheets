@@ -1,0 +1,8 @@
+How to use mocks in cucumber?
+-----------------------------
+In the cucumber offical document, they recommanded us only mock things like Time and external service.
+
+Where does cucumber features start in?
+--------------------------------------
+Sometime I don't know where to start writing cucumber feature. Now I know it. I should build all basic
+features and steps because the rest is built on them.

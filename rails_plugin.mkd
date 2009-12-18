@@ -1,0 +1,24 @@
+Basic Mechanism
+---------------
+We could look into the [rspec\_plugin\_generator](http://github.com/patmaddox/rspec-plugin-generator/) which is a basic
+plugin to make another plugin using rspec testing framework.
+
+In this plugin, the basic file is the &lt;plugin\_name&gt;/generators/&lt;generator\_name&gt;\_generator.rb file and
+some template files. Start from there, you could build a simple but useful generator plugin.
+
+What's happen in manifest?
+--------------------------
+I would explain several codes:
+
+    m.directory "#{plugin_path}/lib"
+
+This would check the dir, if not exists, then create one.
+
+    m.template "plugin:README",       "#{plugin_path}/README"
+
+This would copy the plugin built-in README file to the assigned dir. We don't need to prepare the README file.
+
+    m.template "spec_helper.rb",      "#{plugin_path}/spec/spec_helper.rb"
+
+This would copy our spec\_helper.rb file in the template folder to the assigned dir. The template file is actually
+**erb** file, using variables which assigned as the **instance variables** in the generator.rb file.
