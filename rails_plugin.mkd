@@ -22,3 +22,14 @@ This would copy the plugin built-in README file to the assigned dir. We don't ne
 
 This would copy our spec\_helper.rb file in the template folder to the assigned dir. The template file is actually
 **erb** file, using variables which assigned as the **instance variables** in the generator.rb file.
+
+But what can we do in view templates?
+-------------------------------------
+If you're using erb as the template builder, you must have `<% %>`, `<%= %>` full of your files. Put these strings
+directly into the generator's template file would cause compile error because the conflict of erb parsing strings.
+The solution is that change the static erb parsing string to `<%% %>`, `<%%= %>`.
+
+Custom view builder
+-------------------
+Do you want a custom view builder beyond the build-in erb, xml, rjs builders? The [csvbuilder](http://github.com/econsultancy/csv_builder/) would
+give you enough suggestions. And it's very simple. :)
