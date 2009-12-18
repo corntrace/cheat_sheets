@@ -1,0 +1,12 @@
+The different between `'` and `"`
+---------------------------------
+Both `'` and `"` could be used to build strings, but there's a different between them when special character
+in the string. For example:
+
+    echo "normal ?\\A\<CR>"			"output => normal ?\A
+
+The special characters are all be escaped. While this:
+
+    echo 'normal ?\\A\<CR>'			"output => normal ?\\A\<CR>
+
+The special characters are remained.
