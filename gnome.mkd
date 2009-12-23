@@ -1,0 +1,11 @@
+How to add an icon for custom launcher?
+---------------------------------------
+Firstly, you should install ImageMagick, then every thing is very simple:
+
+    $ convert image.png image.xpm
+
+Then:
+
+    sudo cp image.xpm /usr/share/pixmaps/
+
+Then go to the propertiese of the launcher, choose the image in the path below.

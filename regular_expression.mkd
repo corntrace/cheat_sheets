@@ -19,3 +19,22 @@ But if I don't want the first result, I could using the **Passive Group**
 Then I could get the matching result:
 
     $1 = "bananas"
+
+Group selection: none or other
+------------------------------
+Look at the following string:
+> I have one apple
+> have one apple
+
+How can I match the first 'I' none or exists?
+The following regular expression could do this:
+
+    /(|I) have one apple/
+
+The group selection could match a none elememt, just like `(|other)`
+
+Of course, if you don't want the match result, you can write this:
+
+    /(?:|I) have one apple/
+
+This is the 'passive group' :)
